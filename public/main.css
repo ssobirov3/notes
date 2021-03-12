@@ -18,6 +18,14 @@ a:hover {
 	color: tomato;
 }
 
+.container,
+.header {
+	max-width: 1000px;
+	margin: 0 auto;
+
+}
+
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -33,4 +41,69 @@ a:hover {
 
 .logo {
 	padding: 10px 20px;
+}
+
+/* Homepage  srykes*/
+.intro-msg {
+	padding: 20px;
+	margin-top: 150px;
+	font-size: 3.5rem;
+}
+
+.featured {
+	margin-left: 20px;
+	padding: 10px 20px;
+	font-size: 1.3rem;
+	display: inline-block;
+	background-color: tomato;
+	color: #fff;
+	border: none;
+}
+
+/* Create Page*/
+
+.page-title ,
+.form {
+	margin-left: 20px;
+
+}
+
+.page-title {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.form {
+	max-width: 50%;
+
+}
+
+.input {
+	display: block;
+	width: 100%;
+	font-size: 1.3rem;
+	padding: 10px;
+	border: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: tomato;
+	color: #fff;
+	border: none;
+}
+
+
+/* Notes page */
+.notes {
+	margin: 20px 0 0 20px;
+}
+
+.note {
+	display: block;
+	padding: 10px 0;
+	font: 1.5rem;
+	border-bottom: 1px dotted #ccc;
 }
