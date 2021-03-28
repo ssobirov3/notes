@@ -101,9 +101,27 @@ a:hover {
 	margin: 20px 0 0 20px;
 }
 
+.note-wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ccc;
+	max-width: 60%;
+
+}
+
 .note {
-	display: block;
+	display: inline-block;
 	padding: 10px 0;
 	font: 1.5rem;
-	border-bottom: 1px dotted #ccc;
+	
+}
+
+.delete {
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: tomato;
+	color: #fff;
+	border: none;
+
 }

@@ -1,16 +1,11 @@
 const express=require('express');
 const app=express();
 
-const notes=[
-	'Some notes',
-	'Some notes-2',
-	'Some notes-3'
-];
-
-
 app.use('/static',express.static('public'))
 
 app.set('view engine', 'pug');
+
+const notes=require('./data.js');
 
 app.get('/',(req,res) =>{
 	//to do -- Handler for Root URL 
@@ -29,9 +24,11 @@ app.get('/notes',(req,res) =>{
 })
 
 
-app.get('/notes/1',(req,res) =>{
+app.get('/notes/:id',(req,res) =>{
 	//to do -- Handler for Root URL 
-	res.render('detail');
+	const noteID = req.params.id;
+	const note = notes.filter(note=> note.id == noteID)[0]
+	res.render('detail',{note: note});
 })
 
 
